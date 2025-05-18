@@ -147,7 +147,6 @@ public class RecordingActivity extends AppCompatActivity {
             player.prepare();
             player.start();
 
-            // Indítsd el a lejárati idő frissítést
             handler.post(updatePlaybackTimer);
 
             player.setOnCompletionListener(mp -> {
